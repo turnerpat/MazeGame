@@ -311,7 +311,7 @@ public class MazeGame {
             }
         }
         System.out.println("Congrats, you won the game!");
-        System.out.print("Total number of moves used: " + moveCount);
+        System.out.println("Total number of moves used: " + moveCount);
     }
 
     /**
