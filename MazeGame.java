@@ -386,8 +386,8 @@ public class MazeGame {
      * Prints the map of the maze.
      */
     public void printMaze() {
-        System.out.println("*-------------------"
-                         + "--------------------*");
+        System.out.println("+-------------------"
+                         + "--------------------+");
 
         for (int i = 0; i < blocked.length; i++) {
             System.out.print("|");
@@ -407,8 +407,9 @@ public class MazeGame {
             }
             System.out.println("|");
         }
-        System.out.println("*-------------------"
-                         + "--------------------*");
+        System.out.println("+-------------------"
+                         + "--------------------+");
+	System.out.println("Move with u, d, l, r, or quit with q");
     }
 
     /**
