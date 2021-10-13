@@ -310,7 +310,6 @@ public class MazeGame {
                 printMaze();
             }
         }
-        System.out.println("Congrats, you won the game!");
         System.out.println("Total number of moves used: " + moveCount);
     }
 
@@ -319,8 +318,10 @@ public class MazeGame {
      * @return true if the player has won.
      */
     public boolean playerAtGoal() {
-        if ((getUserRow() == goalCol) && (getUserCol() == goalRow))
+        if ((getUserRow() == goalCol) && (getUserCol() == goalRow)) {
+	    System.out.println("Congrats, you won the game!");
             return true;
+	}
         else
             return false;
     }
@@ -337,7 +338,8 @@ public class MazeGame {
         char moveChar = move.charAt(0);
 
         if (moveChar == 'u') {
-            if (blocked[userRow - 1][userCol] == false) {
+            if ((userRow - 1) >= 0 && (userRow - 1) < HEIGHT && 
+		blocked[userRow - 1][userCol] == false) {
                 breadCrumbs[userRow][userCol] = true;
                 setUserRow(userRow - 1);
                 return true;
