@@ -59,7 +59,7 @@ Running and Executing
 
         .. image:: images/move.png
 
-    Once the game begins you can move your player token (@) around the maze by entering up, down, left, or right (or u, d, l, r to be simpler) into the console. 
+    Once the game begins you can move your player token (@) around the maze by entering up, down, left, or right (or u, d, l, r to be simpler) into the console. You may also quit by entering quit or q.
 
     Your token will leave behind bread crumbs (.) to show where you have been in the maze, making it easier to traverse.
 
@@ -72,7 +72,7 @@ Running and Executing
 ****
 FAQs
 ****
-    How do I quit the game?
+    
 
 ***************
 Troubleshooting
@@ -87,3 +87,4 @@ How to Contribute
 *********
 Licensing
 *********
+    This project is distributed under an `MIT license <https://opensource.org/licenses/MIT>`_.
