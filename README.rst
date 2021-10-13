@@ -28,7 +28,8 @@ Installation
                     ``$ git config --global user.email <email>``
 
         * MazeGame
-            - You may download the files from GitHub or clone with:
+            - You may download the files from GitHub_ or clone with:
+                    .. _GitHub: https://github.com/turnerpat/MazeGame
 
                     ``$ git clone https://github.com/turnerpat/MazeGame.git``
 
