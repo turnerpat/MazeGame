@@ -69,15 +69,33 @@ Running and Executing
 
     The goal of the game is to move your player token from the starting point (S) to the goal point (G) in as few moves as possible.
 
-****
-FAQs
-****
-    
+***********
+Source Code
+***********
+
 
 ***************
 Troubleshooting
 ***************
+    **FAQs**
+        * "How do I make new maze maps?"
 
+            - Create a text file with exactly 19 rows and 39 columns (they can have spaces between them). 
+            - Fill out these spaces with 0 and 1 characters, with spaces you can move through being 0 and spaces you cannot being 1. 
+            - You must also include a single S character to start from and one G character to be the goal. 
+            - Look at the easy and hard text files provided to see the formatting as an example.
+
+        * Can this code run on Windows and Mac machines?
+
+            - Yes! As long as you have the means to compile and run the program with Java you can  play the game on any platform. Simply download from GitHub and compile/execute where possible.
+
+            - This could be through an IDE, console, or command line, as long as you know where the files are downloaded and can compile them.
+
+        * What are the output files for?
+
+            - The output files provided serve to show what the program will convert the easy and hard text files into. The program will still work without them.
+
+    If you have any questions or remaining issues feel free to contact me at turnerpatrick21@gmail.com.
 
 *****************
 How to Contribute
