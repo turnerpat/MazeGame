@@ -72,7 +72,22 @@ Running and Executing
 ***********
 Source Code
 ***********
+    The main() method of MazeGame prompts the player for the input file name, creates the scanner object that will be used for taking player input, and then initializes the game using those two inputs.
 
+        ``public static void main(String[] args) {``
+            ``System.out.println("Please input the name of the text file you want to use: ");``
+            
+            ``Scanner scan = new Scanner(System.in);``
+
+            ``String mapFile = scan.nextLine();``
+            
+            ``MazeGame game = new MazeGame(mapFile, scan);``
+            
+            ``System.out.println("Enter any character to continue...");``
+            
+            ``game.playGame();``
+        
+        ``}``
 
 ***************
 Troubleshooting
