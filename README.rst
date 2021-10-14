@@ -100,7 +100,9 @@ Troubleshooting
 *****************
 How to Contribute
 *****************
+       - If you would like to contribute to the ongoing development of this project or use the source code for your own projects feel free to download the code from GitHub and modify as needed. 
 
+       - I will accept pull requests on the repository as well as any feature suggestions that meet the standards of the established project.
 
 *********
 Licensing
