@@ -1,10 +1,5 @@
 Welcome to MazeGame's documentation!
 ====================================
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
 ************
 Introduction
 ************
@@ -99,7 +94,7 @@ FAQs
 ***************************
 Troubleshooting and Support
 ***************************
-       - If you need additional troubleshooting, help, or support you can contact me at turnerpj@appstate.edu for inidivual issues.
+       - If you need additional troubleshooting, help, or support you can contact me at turnerpatrick21@gmail.com for inidivual issues.
         
        - Bug reporting and additional notes should be sent here as well.
 
