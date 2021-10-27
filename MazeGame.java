@@ -296,7 +296,7 @@ public class MazeGame {
      */
     public void playGame() {
         String input = "";
-        int moveCount = 0;
+        int moveCount = -1;
 
         while (playerAtGoal() != true) {
             input = moveScanner.nextLine();
