@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.FileNotFoundException;
 
 /**
- * A maze game.
+ * A simple maze game.
  * 
  * @author Patrick Turner
  * @version 1/23/2020
@@ -308,6 +308,7 @@ public class MazeGame {
                 }
                 moveCount++;
                 printMaze();
+		System.out.println("Current number of moves used: " + moveCount);
             }
         }
         System.out.println("Total number of moves used: " + moveCount);
