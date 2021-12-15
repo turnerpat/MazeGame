@@ -1,5 +1,3 @@
-package solution;
-
 import java.util.Scanner;
 import java.io.FileReader;
 import java.io.FileNotFoundException;
@@ -297,18 +295,22 @@ public class MazeGame {
     public void playGame() {
         String input = "";
         int moveCount = -1;
-
-        while (playerAtGoal() != true) {
-            input = moveScanner.nextLine();
+        
+	while (playerAtGoal() != true) {
+            printMaze();
+	    System.out.println("Move with u, d, l, r, or quit with q");
+	    moveCount++;
+	    System.out.println("Current number of moves used: " + moveCount);
+	    input = moveScanner.nextLine();
             if (input.length() != 0) {
                 makeMove(input);
                 if (quitFlag == true) {
-                    System.out.println("You have quit the game.");
+        	    System.out.print("\033[H\033[2J");
+	            System.out.flush();
+		    printMaze();  
+		    System.out.println("You have quit the game.");
                     break;
                 }
-                moveCount++;
-                printMaze();
-		System.out.println("Current number of moves used: " + moveCount);
             }
         }
         System.out.println("Total number of moves used: " + moveCount);
@@ -320,6 +322,9 @@ public class MazeGame {
      */
     public boolean playerAtGoal() {
         if ((getUserRow() == goalCol) && (getUserCol() == goalRow)) {
+            System.out.print("\033[H\033[2J");
+	    System.out.flush();
+ 	    printMaze();  
 	    System.out.println("Congrats, you won the game!");
             return true;
 	}
@@ -382,6 +387,11 @@ public class MazeGame {
             quitFlag = true;
             return true;
         }
+	else if (moveChar == '~') {
+	    setUserRow(goalCol);
+	    setUserCol(goalRow);
+	    return true;
+	}
         return false;
     }
 
@@ -389,7 +399,9 @@ public class MazeGame {
      * Prints the map of the maze.
      */
     public void printMaze() {
-        System.out.println("+-------------------"
+        System.out.print("\033[H\033[2J");
+	System.out.flush();
+	System.out.println("+-------------------"
                          + "--------------------+");
 
         for (int i = 0; i < blocked.length; i++) {
@@ -412,7 +424,6 @@ public class MazeGame {
         }
         System.out.println("+-------------------"
                          + "--------------------+");
-	System.out.println("Move with u, d, l, r, or quit with q");
     }
 
     /**
@@ -427,7 +438,7 @@ public class MazeGame {
         Scanner scan = new Scanner(System.in);
         String mapFile = scan.nextLine();
         MazeGame game = new MazeGame(mapFile, scan);
-        System.out.println("Enter any character to continue...");
-        game.playGame();
+	game.playGame();
     }
 }
+
